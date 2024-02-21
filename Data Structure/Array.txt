@@ -1,0 +1,121 @@
+1. WHAT IS ARRAY : 
+	An array is a linear data structure that collects elements of the same data type and stores them in contiguous and adjacent memory locations. 
+
+2. Why does accessing an Array element take O(1) time?
+	As Arrays are allocated contiguously in memory, Fetching a value via an index of the array is an arithmetic operation. 
+	All arithmetic operations are done in constant time i.e., O(1).
+	Explanation:
+		In an array, we have the memory address of index 0 (Base address). 
+		By adding the product of the index number (of value to be fetched) and the size of one element (ex. int size is 4 bytes) 
+		with the base address, we can have the address of that index’s value. we don’t have to iterate through the array. So it’s done in O(1).
+			Address of ith Index = Base address + offset = Address of 0th Index + i × (size of one element)
+
+
+3. Insertion : 
+	a) Inserting Elements in an Array at the Head : 	Time: O(n)		Space: O(1)
+	b) Inserting Elements in an Array at the End :  	Time: O(1)		Space: O(1)
+	c) Inserting Elements in an Array at any Position : Time: O(n)		Space: O(1)
+	
+4. Delet : 
+	a) Delet Elements in an Array at the Head : 	Time: O(n)		Space: O(1)
+	b) Delet Elements in an Array at the End :  	Time: O(1)		Space: O(1)
+	c) Delet Elements in an Array at any Position : Time: O(n)		Space: O(1)
+
+
+5. Sorting Algorithom : 
+	Time Complexity
+						Time 		Space
+	Selection Sort		O(n^2)		O(1)
+	Bubble Sort			O(n^2)		O(1)
+	Insertion Sort		O(n^2)		O(1)
+	Quick Sort			O(n^2)		O(n)
+	Bucket Sort			O(n^2)		O(n)
+	Tree Sort			O(n^2)		O(n)
+
+
+	Heap Sort			O(n log(n))	O(1)
+	Merge Sort			O(n log(n))	O(n)
+	Cube Sort			O(n log(n))	O(n)
+	
+	Radix Sort			O(nk)		O(n + k)
+	Count Sort			O(n +k)		O(k)
+	Shell Sort			O(n^2)		O(1)
+	Tim Sort			O(n log(n))	O(n)
+	
+	
+	a) SELECTION SORT : O(n^2)		O(1)
+		The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list 
+		and swaps it with the first element of the unsorted part. 
+		This process is repeated for the remaining unsorted portion until the entire list is sorted. 
+		* Works well with small datasets.
+		* The default implementation of the Selection Sort Algorithm is not stable.
+		* Selection Sort Algorithm is an in-place algorithm, as it does not require extra space.
+
+	
+	B) BUBBLE SORT : O(n^2)		O(1)
+		Bubble Sort works by repeatedly swapping the adjacent elements if they are in the wrong order. 
+		This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+		* It does not require any additional memory space.
+		* It is a stable sorting algorithm, meaning that elements with the same key value maintain their relative order in the sorted output.
+		* the bubble sort algorithm is stable.
+		Q1. What is the Boundary Case for Bubble sort? 
+			Bubble sort takes minimum time (Order of n) when elements are already sorted. 
+			Hence it is best to check if the array is already sorted or not beforehand, to avoid O(N2) time complexity.
+
+		Q2. Does sorting happen in place in Bubble sort?
+			Yes, Bubble sort performs the swapping of adjacent pairs without the use of any major data structure. 
+			Hence Bubble sort algorithm is an in-place algorithm.
+
+		Q3. Where is the Bubble sort algorithm used?
+			In computer graphics, it is popular for its capability to detect a tiny error (like a swap of just two elements) 
+			in almost-sorted arrays and fix it with just linear complexity (2n). 
+			Example: It is used in a polygon filling algorithm, where bounding lines are sorted by their x coordinate 
+			at a specific scan line (a line parallel to the x-axis), and with incrementing y their order changes (two elements are swapped)
+			only at intersections of two lines.
+	
+	c) INSERTION SORT : O(n^2)		O(1)
+		
+		* Insertion sort is efficient for small data values
+		Q1. What are the Boundary Cases of the Insertion Sort algorithm?
+			Insertion sort takes the maximum time to sort if elements are sorted in reverse order. 
+			And it takes minimum time (Order of n) when elements are already sorted. 
+
+		Q2. What is the Algorithmic Paradigm of the Insertion Sort algorithm?
+			The Insertion Sort algorithm follows an incremental approach.
+
+		Q3. Is Insertion Sort an in-place sorting algorithm?
+			Yes, insertion sort is an in-place sorting algorithm.
+
+		Q4. Is Insertion Sort a stable algorithm?
+			Yes, insertion sort is a stable sorting algorithm.
+
+		Q5. When is the Insertion Sort algorithm used?
+			Insertion sort is used when number of elements is small. 
+			It can also be useful when the input array is almost sorted, 
+			and only a few elements are misplaced in a complete big array.
+	
+	d) QUICK SORT : O(n^2)		O(N)
+		QuickSort is a sorting algorithm based on the Divide and Conquer algorithm 
+		that picks an element as a pivot and partitions the given array around the 
+		picked pivot by placing the pivot in its correct position in the sorted array.
+		* It is a divide-and-conquer algorithm that makes it easier to solve problems.
+		* It is efficient on large data sets.
+		* It has a low overhead, as it only requires a small amount of memory to function.
+		* It is not a good choice for small data sets.
+		* It is not a stable sort
+	
+	E) COUNTING SORT 	O(n + m)		O(m)
+		Counting Sort is a non-comparison-based sorting algorithm that works well when there is limited range of input values. 
+		It is particularly efficient when the range of input values is small compared to the number of elements to be sorted. 
+		The basic idea behind Counting Sort is to count the frequency of each distinct element in the input array and 
+		use that information to place the elements in their correct sorted positions.
+		* Counting sort generally performs faster than all comparison-based sorting algorithms, and stable.
+		* Counting sort doesn’t work on decimal values.
+		
+	f) MERGE SORT :  	O(n log(n))	O(n)
+		Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, 
+		sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
+		
+	G) HEAP SORT : O(n log(n))	O(1)
+		Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where 
+		we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.
