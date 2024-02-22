@@ -1,0 +1,15 @@
+1. Binary tree why non-linear ? : 
+
+2. Parent children relation : 
+
+3. About Tree formal defination : 
+
+4. Duplicat remove : 
+
+5. What is Binary Tree : 
+
+6. Order (pre, in, post, level) : 
+
+7. Depth and height : 
+
+8. Leetcode binary tree problem solving : 

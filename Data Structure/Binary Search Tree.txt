@@ -1,0 +1,5 @@
+1. Why use binary search tree : (sorted and easily search)
+
+2. what is balance binary tree :
+
+3. What is complete binary tree : 
