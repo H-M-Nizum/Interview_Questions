@@ -96,3 +96,10 @@
 			 j = j->prev;
 		}
 	 }
+	 
+	 
+7. List : 
+	List is a STL library function in doubly linked list.
+	
+8. Detect cycle :
+	Apply hare and Tortoise algorithms or First and Slow technique.
