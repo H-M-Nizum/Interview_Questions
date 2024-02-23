@@ -1,5 +1,30 @@
 1. Why use binary search tree : (sorted and easily search)
+	Binary Search Tree (BST) is a special type of binary tree. The left subtree contains only the keys which are lower than the key of the node.
+	The right subtree contains only the keys which are greater than the key of the node. The left and right subtree both should be binary search tree.
+	
+	* BSTs are used for indexing. It is also used to implement various searching algorithms. BSTs can be used in  store and quickly retrieve data.
+	contains : node_val > node_left_val and node_val < node_right_val.
 
 2. what is balance binary tree :
+	A binary tree is balanced if the height of the tree is O(Log n) where n is the number of nodes. 
+	The height of the left and right tree for any node does not differ by more than 1.
+	The left subtree of that node is also balanced. The right subtree of that node is also balanced.
 
 3. What is complete binary tree : 
+	A complete binary tree is a special type of binary tree where all the levels of the tree are filled completely 
+	except the lowest level nodes which are filled from as left as possible.
+	height ar complexity O(Log(n))
+	
+	Array representation of complete binary tree :
+		left node = root index * 2 + 1
+		right node = root index * 2 + 2
+		parent = (index - 1) / 2
+	
+
+4. Insert and delet : 
+	complexity for insert one node = O(h) h means height n node = O(nh)
+	perfect a log(n)
+	
+	Que-1. What is the worst-case time complexity for search, insert and delete operations in a general Binary Search Tree? 
+
+		O(n) for all 
