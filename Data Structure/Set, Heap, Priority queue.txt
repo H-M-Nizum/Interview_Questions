@@ -1,1 +1,19 @@
-1. Heapify : 
+1. Heap : 
+	Heap is a array representation in complete binary tree. Always sorted.
+	Heap creation time complexity O(nlog(n))
+	Heap delation time complexity O(nlog(n))
+	Heap sort time complexity O(nlog(n))
+	There are two type of heap __ 
+		1. max heap :-  parent >= children 
+		2. min heap :-  parent <= children
+	Insertion complexity O(log(n))
+	Insertion : 
+		max heap - The new node value if greater then parent value , just swap them.
+		min heap - The new node value if less then parent value , just swap them.
+	
+	delete :
+		complexity O(log(n))
+
+2. Heapify : 
+	Heapify reduce heap creation time complexity.
+	n element's of array leap node start (n/2)+1 to n. Heapify work in non leap node.
