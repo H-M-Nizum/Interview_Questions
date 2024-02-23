@@ -1,15 +1,63 @@
 1. Binary tree why non-linear ? : 
+	Tree is a non-linear data structure.
+	* A non-linear data structure in which data elements are not arranged sequentially. Mainly, data elements are arranged in random order 
+	  without forming a linear structure.Data elements are present at the multilevel, for example, tree. In trees, the data elements are arranged 
+	  in the hierarchical form, whereas in graphs, the data elements are arranged in random order, using the edges and vertex.
 
 2. Parent children relation : 
+	The relationship between a parent and a child refers to the hierarchical connection between different levels or nodes in the tree.
+	This parent-child relationship is commonly used to organize and represent data in a way that reflects hierarchical relationships.
+	For example, in a file system, folders (directories) and files can be organized in a tree structure, where folders are parent nodes and files are child nodes.
 
-3. About Tree formal defination : 
+3. About Tree formal definition : 
+	A tree is a finite, non-empty set of nodes in a parent-child relationship. Binary Tree means maximum two children have every single node.
+	A tree is a widely used abstract data type that represents a hierarchical tree structure with a set of connected nodes. 
+	Each node in the tree can be connected to many children (depending on the type of tree), but must be connected to exactly one parent, 
+	except for the root node, which has no parent (i.e., the root node as the top-most node in the tree hierarchy).
 
 4. Duplicat remove : 
 
 5. What is Binary Tree : 
+	A tree is a hierarchical data structure that has a set of connected nodes in a hierarchy like a tree. 
+	There is one node, commonly called the root node, which can be connected to a set of child nodes in the form of branches. 
+
+	When we restrict the tree’s definition to specify that any node can have at most two child nodes attached, this becomes a Binary tree. 
+	A binary tree can have a left child node and a right child node. 
 
 6. Order (pre, in, post, level) : 
+	pre Order -->> 	Root -> Left -> Right   // using recursion
+	In Order -->> 	Left -> Root -> Right   // using recursion
+	Post Order -->> Left -> Right -> Root	// using recursion
+	Level Order -->> Travers level by level.// using queue.
 
 7. Depth and height : 
+	# Height
+	int maxHeight(Node *root){
+		if (root == NULL)
+			return 0;
+		int l = maxHeight(root->left);
+		int r = maxHeight(root->right);
+		return max(l, r) + 1;
+	}
 
-8. Leetcode binary tree problem solving : 
+
+8. Types of Binary Trees :
+Here are a few common binary tree types:
+
+	1. Full Binary Tree: 
+			Every node has either 0 or 2 child nodes, i.e., left and right or no children
+	2. Complete Binary Tree: 
+			All levels, except possibly the last, are filled, and all nodes are as left as possible
+	3. Perfect Binary Tree: 
+			All nodes have exactly two children, and all leaf nodes are at the same level
+	4. Balanced Binary Tree: 
+			The heights of any node’s left and right subtrees differ by at most one
+	5. Binary Search Tree (BST): 
+			A binary tree in which the left child node is smaller, and the right child node is greater than the parent node 
+	6. Threaded Binary Tree: 
+			Each node of the binary tree contains extra information, called threads, that allows for efficient tree traversal without recursion or a stack
+	7. Heap: 
+			A complete binary tree that satisfies the heap property
+
+
+9. Leetcode binary tree problem solving : 
