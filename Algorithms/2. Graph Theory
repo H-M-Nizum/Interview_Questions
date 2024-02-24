@@ -1,0 +1,54 @@
+1. What is Graph : 
+	Graph is a non linear data structure that collection of vertex/node and Edge.
+	
+2. Type of Graph :
+	There are two type of graph depend on Direction ___
+		i. Directed graph (one way road)
+			Directed Acyclic Graph --> A Directed Graph that does not contain any cycle. 
+		ii. Undirected graph (Two way road)
+	
+	There are two type of graph depend on Weight of edge ___
+		i. Weighted graph ___
+			A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
+			Weighted graphs can be further classified as directed weighted graphs and undirected weighted graphs. 
+		ii. Unweighted graph
+	
+	
+	# Regular Graph
+		The graph in which the degree of every vertex is equal to K is called K regular graph.
+	# Complete Graph
+		The graph in which from each node there is an edge to each other node.
+		
+	# Cycle Graph
+		The graph in which the graph is a cycle in itself, the degree of each vertex is 2. 
+	# Cyclic Graph
+		A graph containing at least one cycle is known as a Cyclic graph.
+		
+	# Connected Graph
+		The graph in which from one node we can visit any other node in the graph is known as a connected graph. 
+	# Disconnected Graph
+		The graph in which at least one node is not reachable from a node is known as a disconnected graph.
+	
+	
+3. Tree :
+	Special type of graph is tree have no cycle.
+	Number of edge - number of vertex - 1     (e = v-1)
+
+4. Graph Representation :
+	Mainly three way to represent a graph.
+		i. Adjanccncy Matrix ___
+			In this method, the graph is stored in the form of the 2D matrix where rows and columns denote vertices. 
+			Each entry in the matrix represents the weight of the edge between those vertices. 
+			*** When need to check, any two vertex have connection or edge, then use adjancency matrix.
+			*** A lot of edges (dense) space - n^2
+		ii. Adjanccncy List ___
+			This graph is represented as a collection of linked lists. There is an array of pointer which points to the edges connected to that vertex. 
+			*** When we need to check , any node to connected number of node and which node are connected, then use adjancency list.
+			*** Less Edge (sparse  tree)  space - n/e
+		iii. List of edges ___
+		
+		
+		Action		Adjacency Matrix	Adjacency List
+	Adding Edge			O(1)				O(1)      
+	Removing an edge	O(1)				O(N)
+	Initializing		O(N*N)				O(N)

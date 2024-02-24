@@ -1,0 +1,19 @@
+1. Time complexity :	
+	O(1) 		---> 	Constant
+	O(logn) 	---> 	Lagarithmic
+	O(sqrt(n))  ---> 	Squre root
+	O(n logn)	--->	
+	O(n) 		---> 	Linear Time
+	O(n^2) 		---> 	Quadratic
+	O(n^3) 		---> 	Cubic
+	O(2^n) 		--->  	Exponitial
+
+2. Divide And Conquer : 	(Divide -> Conquer -> Combine)  O(n log(n))
+	Divide and Conquer is a problem-solving strategy that involves breaking down a complex problem into smaller, more manageable parts, 
+	solving each part individually, and then combining the solutions to solve the original problem. 
+	* The following are some standard algorithms that follow Divide and Conquer algorithm ___
+		i. Quicksort 
+		ii. Merge Sort
+		iii. Closest Pair of Points
+		iv. Cooley–Tukey Fast Fourier Transform (FFT) algorithm
+	
