@@ -1,0 +1,33 @@
+1. What is Data structures ?
+	Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. 
+
+2. What Are the Different Types of Data Structures?
+	The different types of data structures are: 
+
+		Arrays: 
+			A collection of data values stored sequentially
+		Stacks: 
+			Last-in-first-out (LIFO) data structures where the element placed last is accessed first.
+		Queues: 
+			A first-in-first-out data structure. 
+		Linked lists: 
+			A collection of data values stored in a linear order and connected to each other
+		Graphs: 
+			A data structure in which data values are placed in nodes connected by edges 
+		Trees: 
+			Similar to a linked list, but with data values linked in a hierarchical fashion
+		Heaps: 
+			A binary tree data structure wherein parent data values can be compared to child data values
+		Hash table: 
+			A table where each value is assigned a key and then stored, making accessing individual values easy. 
+
+3. Linear Data Structures vs Non-Linear Data Structures: What Is the Difference?
+	A linear data structure stores data in a linear sequence. You can only traverse the data structure in that linear sequence. 
+	Arrays and stacks are examples of linear data structures. 
+
+	Non-linear data structures arrange data in ways that are not linear. A graph, for example, has nodes which are connected to each other through edges. 
+	The relationships between the data values are defined by which nodes are connected through edges, and not by a sequential arrangement. 
+	Trees are also non-linear data structures. 
+	
+4. What is Dynamic data structures?
+	Dynamic data structures are data structures whose size is not fixed.

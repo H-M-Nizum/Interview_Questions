@@ -61,3 +61,10 @@ Here are a few common binary tree types:
 
 
 9. Leetcode binary tree problem solving : 
+
+10. What Is the Maximum Number of Nodes in a Binary Tree of Height K?
+	The maximum number of nodes in a binary tree of height k is 2k-1, where k is greater than or equal to 1. 
+	
+11. Define an AVL Tree.
+	An AVL tree is a binary search tree whose height is self-balancing. 
+	This is achieved by designing it so that the difference in the height of the left subtree and right subtree can never exceed one for any node. 

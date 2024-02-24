@@ -40,6 +40,8 @@
 		d) push(g)  
 		e) pop() 
 	প্রতিটা অপারেশনের কমপ্লেক্সিটি O(1)
+	
+	## Dequeue :- Dequeuing is an operation that can be performed on a queue in which an element at the very front of the queue is removed or accessed for an operation. 
 
 4. Queue Work procidure : 
 	* কিউতে দুইরকম অপারেশন থাকে। এনকিউ(Enqueue) মানে হলো কিউতে নতুন এলিমেন্ট যোগ করা এবং ডিকিউ(Dequeue) বা পপ মানে হলো সবথেকে পুরোনো এলিমেন্টটা কিউ থেকে সরিয়ে ফেলা।
@@ -52,3 +54,13 @@
 	i) Stack reverse : Every top value tranfer a new stack. then new stack is a reverse stack is a reverse stack for previous stack.
 	
 	ii) Queue reverse : Every Front value of queue insert in a new stack. Then again stack every top value insert in previous queue. Now queue is reverse.
+
+6. How To Implement a Queue Using a Stack?
+
+7. How Can You Implement a Stack Using Queues?
+
+8. When a pop() operation is called on an empty queue or stack, what is the condition called?
+	* Underflow
+	
+9 . Which of the following data structures finds its use in recursion?
+	* Stack

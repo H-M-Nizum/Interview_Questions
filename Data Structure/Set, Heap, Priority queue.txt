@@ -17,3 +17,27 @@
 2. Heapify : 
 	Heapify reduce heap creation time complexity.
 	n element's of array leap node start (n/2)+1 to n. Heapify work in non leap node.
+	
+3. Priority Queue :
+	insert and sort for n elemet time complexity O(nlog(n))
+	1. pq.push() 		-> O(logn)
+	2. pq.pop()			-> O(logn)
+	3. pq.top()			-> O(1)
+	priority_queue<data_type> name    => max heap
+	priority_queue<data_type, vector<data_type>, greater<data_type>> name; 		=> min heap
+	
+	
+4. Map :
+	Map contain key value pair . No two mapped values can have the same key values. It's hasing's STL.
+	put and get value complexity O(logn)
+	map<data_type, data_type> name;
+	## you can use an object as a key in a HashMap. 
+	## You cannot store a duplicate key in a HashMap. 
+	## Maps in C++ are implemented using which of the following data structures?  => Red-Black Trees
+
+	
+5. Set :
+	set is a STL in balance BST. Can't contain Duplicate value.
+	sort function complexity O(nlogn)
+	search function complexity O(logn)
+	set<data_type> name;
