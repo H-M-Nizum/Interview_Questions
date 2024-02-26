@@ -1,32 +1,141 @@
+1) Query Language 
+2) Query 
+3) Type of SQL
+4) MySQL Datatype
+5) Type of Constraints
+
+
+
+=======================================================================================================================
+
 SQL (Structured Query Language) itself is a standard language for managing and manipulating relational databases. 
-There are different types or categories of SQL statements based on their purposes. 
+
+1) Query Language :
+    * QUEL (Query Language)
+    * QBE (Query By Examples)
+    * SQL (Structured Query Language)
+
+=======================================================================================================================
+2) Query : 
+    * select query :- find value in a table
+    * Parameter query :- find value using parameter.
+    * crosstab query : find summary or group.
+    * unmatched query : find something that don't match.
+    * Action query : make table, append, update, delete.
+
+=======================================================================================================================
+3) Type of SQL : There are different types or categories of SQL statements based on their purposes. 
 Here are some common types of SQL statements:
 
-Data Query Language (DQL):
+        DDL, DML, DQL, DCL, TCL
+    --------------------------------
+
+a) Data Query Language (DQL):
 -------------------------------------------
 Used to query the database and retrieve data.
 Examples: SELECT
 
 
-Data Definition Language (DDL):
+b) Data Definition Language (DDL):
 -------------------------------------------
-Used to define and manage the structure of a database.
-Examples: CREATE, ALTER, DROP
+Used to define and manage the structure of a database. #Table#
+Examples: CREATE(table create), ALTER(column add), DROP(table delete)
 
-Data Manipulation Language (DML):
+c) Data Manipulation Language (DML):
 -------------------------------------------
-Used to manipulate data stored in the database.
+Used to manipulate data stored in the database. #Record#
 Examples: INSERT, UPDATE, DELETE
 
-Data Control Language (DCL):
+d) Data Control Language (DCL):
 -------------------------------------------
 Used to control access to data within the database.
 Examples: GRANT, REVOKE
 
-Transaction Control Language (TCL):
+e) Transaction Control Language (TCL):
 -------------------------------------------
 Used to manage transactions within a database.
 Examples: COMMIT, ROLLBACK, SAVEPOINT
-These categories cover the primary types of SQL statements. SQL is used across various relational database management systems (RDBMS), and while the core syntax is generally consistent, there might be slight variations or additional features specific to each database system (e.g., MySQL, PostgreSQL, Oracle, SQL Server). The specific SQL dialect can vary, and certain databases may have their own extensions or proprietary features beyond the standard SQL.
+
+These categories cover the primary types of SQL statements. SQL is used across various relational 
+database management systems (RDBMS), and while the core syntax is generally consistent, there might 
+be slight variations or additional features specific to each database system (e.g., MySQL, PostgreSQL, 
+Oracle, SQL Server). The specific SQL dialect can vary, and certain databases may have their own 
+extensions or proprietary features beyond the standard SQL.
+
+========================================================================================================================
+
+4) MySQL Datatype : 
+
+    i) Numeric Types:
+        . INT (Integer)
+        . FLOAT (Floating-Point)
+        . DOUBLE (Double Precision Floating-Point)
+        . DECIMAL (Decimal)
+
+    ii) String Types:
+        . CHAR (Fixed-length character string)
+        . VARCHAR (Variable-length character string)
+        . TEXT (Variable-length text)
+
+    iii) Date and Time Types:
+        . DATE (Date)
+        . TIME (Time)
+        . DATETIME (Date and Time)
+        . TIMESTAMP (Timestamp)
+
+    iv) Boolean Type:
+        . BOOLEAN (or BOOL)
+
+    v) Binary Types:
+        . BLOB (Binary Large Object)
+        . BIT (Fixed-length bit string)
+
+    vi) Spatial Types:
+        . Various spatial data types for geographic information systems (GIS).
+========================================================================================================================
+
+5) Type of Constraints : 
+
+The following constraints are commonly used in SQL:
+
+    NOT NULL - Ensures that a column cannot have a NULL value
+    UNIQUE - Ensures that all values in a column are different
+    PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+    FOREIGN KEY - Prevents actions that would destroy links between tables
+    CHECK - Ensures that the values in a column satisfies a specific condition
+    DEFAULT - Sets a default value for a column if no value is specified
+    CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+========================================================================================================================
+6) MySQL Operators :
+
+    i) Arithmetic Operators _
+        (   +   -   *   /    %  )
+
+    ii) Bitwise Operators _ 
+       . &	Bitwise AND
+       . |	Bitwise OR
+       . ^	Bitwise exclusive OR
+
+    iii) Comparison Operators _ 
+        (   =		>		<		>=	    <=	    <>		)
+
+    iv) Compound Operators _ 
+        . (   +=  	-=  	*=  	/=  	%=  	)
+        . &=	Bitwise AND equals
+        . ^-=	Bitwise exclusive equals
+        . |*=	Bitwise OR equals
+    v) Logical Operators_
+
+        a) ALL :	TRUE if all of the subquery values meet the condition	
+        b) AND :	TRUE if all the conditions separated by AND is TRUE	
+        c) ANY :	TRUE if any of the subquery values meet the condition	
+        d) BETWEEN :	TRUE if the operand is within the range of comparisons	
+        e) EXISTS :	TRUE if the subquery returns one or more records	
+        f) IN :	    TRUE if the operand is equal to one of a list of expressions	
+        g) LIKE : 	TRUE if the operand matches a pattern	
+        h) NOT :	Displays a record if the condition(s) is NOT TRUE	
+        i) OR :	    TRUE if any of the conditions separated by OR is TRUE	
+        j) SOME :	TRUE if any of the subquery values meet the condition
 
 ========================================================================================================================

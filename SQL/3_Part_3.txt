@@ -1,29 +1,125 @@
+1) SELECT
+2) WHERE
+2) DISTINCT, ORDER BY, LIMIT, OFFSET
+4) IN, NOT IN, LIKE, AS
+5) Numeric Function
+6) String Functions
+7) JOIN Queries
+
+
+
+
+
+        |---------------|-------------------|-----------------|
+        |    Roll       |        Name       |        Marks    |
+        |---------------|-------------------|-----------------|
+        |   1001        |       aaaa        |       87        |
+        |---------------|-------------------|-----------------|
+        |   1002        |       bbbb        |       83        |
+        |---------------|-------------------|-----------------|
+        |   1003        |       cccc        |       82        |
+        |---------------|-------------------|-----------------|
+        |   1004        |       dddd        |       81        |
+        |---------------|-------------------|-----------------|
+    
 ----------------------------------------------------------------------------------
-Data Constraints
-    Primary Key
-    Foreign Key
-    Unique
-    NOT NULL
-    CHECK
+
+1) SELECT : used to select data from a database.
+    ex: SELECT column1, column2, ...
+        FROM table_name;
+----------------------------------------------------------------------------------
+
+2) WHERE
+    The WHERE clause is used to filter records.
+    It is used to extract only those records that fulfill a specified condition.
+        ex : SELECT Name
+             FROM table_name
+             WHERE Roll = 1001 
+----------------------------------------------------------------------------------
+
+3) DISTINCT, ORDER BY, LIMIT, OFFSET
+    DISTINCT : Return only Unique value not duplicat value
+        ex : SELECT DISTINCT Name
+             FROM table_name
+
+    ORDER By : (Assending (ASC) or Decrnding (DESC))
+        EX : Return name depend on marks(Assending)
+            SELECT Name
+            FROM table_name
+            ORDER BY ASC
+    
+    LIMIT : Find a fixed number of data.
+        EX : Show first two student result
+            SELECT *
+            FROM table_name
+            LIMIT 2
+    OFFSET : Ignore a fixed number of data.
+        EX : Show data after first two student
+            SELECT *
+            FROM table_name
+            OFFSET 2
+----------------------------------------------------------------------------------
+
+4) IN, NOT IN, LIKE, AS : 
+
+    IN : TRUE if the operand is equal to one of a list of expressions
+        EX : SELECT * 
+             FROM table_name
+             WHERE Marks IN ('85', '87', '82');
+
+    NOT IN : TRUE if the operand is Not equal to one of a list of expressions
+        EX : SELECT * 
+             FROM table_name
+             WHERE Marks NOT IN ('85', '87', '82');
+
+    LIKE : TRUE if the operand matches a pattern
+
+    AS :
+        EX : SELECT *
+             FROM table_name AS t
+             
+----------------------------------------------------------------------------------
+
+5) Numeric Function
+    . ABS : 	Returns the absolute value of a number
+    . AVG :	    Returns the average value of an expression
+    . SQRT :	Returns the square root of a number
+    . SUM : 	Calculates the sum of a set of values
+    . MAX : 	Returns the maximum value in a set of values
+    . MIN : 	Returns the minimum value in a set of values
+    . FLOOR :	Returns the largest integer value that is <= to a number
+    . CEIL :	Returns the smallest integer value that is >= to a number (CEILING)
+    . COUNT :	Returns the number of records returned by a select query
+    . DEGREES :	Converts a value in radians to degrees (RADIANS)
+    . DIV : 	Used for integer division
+    . EXP : 	Returns e raised to the power of a specified number
+    . MOD : 	Returns the remainder of a number divided by another number
+    . POW : 	Returns the value of a number raised to the power of another number (POWER)	
+    . RAND :	Returns a random number
+    . ROUND :	Rounds a number to a specified number of decimal places
+    . TRUNCATE: Truncates a number to the specified number of decimal places
 
 ----------------------------------------------------------------------------------
-Numeric Function
-    FLOOR 
-    ABS 
-    MOD
-    ROUND 
-    CEILING
 
-----------------------------------------------------------------------------------
-String Functions
-    CONCAT 
-    LENGTH
-    SUBSTRING 
-    REPLACE
-    UPPER LOWER
+6) String Functions
 
+ 
+    . ASCII :	    Returns the ASCII value for the specific character
+    . LENGTH :	    Returns the length of a string (in bytes)
+    . CONCAT :  	Adds two or more expressions together
+    . LOWER :   	Converts a string to lower-case (LCASE)
+    . STRCMP :  	Compares two strings
+    . UPPER :   	Converts a string to upper-case (UCASE)
+    . SUBSTRING :	Extracts a substring from a string (starting at any position)
+    . TRIM :    	Removes leading and trailing spaces from a string
+    . CHAR_LENGTH :	Returns the length of a string (in characters) (CHARACTER_LENGTH)
+    . CONCAT_WS :	Adds two or more expressions together with a separator
+    . FIELD :   	Returns the index position of a value in a list of values (FIND_IN_SET)
+    . REPLACE : 	Replaces all occurrences of a substring within a string, with a new substring
+    
 ----------------------------------------------------------------------------------
-JOIN Queries
+
+7) JOIN Queries
     INNER JOIN
     LEFT JOIN
     RIGHT JOIN
@@ -31,9 +127,11 @@ JOIN Queries
     Self Join 
     Cross Join
 ----------------------------------------------------------------------------------
+
 Table Replication or Duplication
 
 ----------------------------------------------------------------------------------
+
 IN & Between
 
 ----------------------------------------------------------------------------------
