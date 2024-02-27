@@ -5,8 +5,9 @@
 5) Numeric Function
 6) String Functions
 7) JOIN Queries
-
-
+8) Table Replication or Duplication 
+9) IN & Between 
+10) Set
 
 
 
@@ -119,26 +120,54 @@
     
 ----------------------------------------------------------------------------------
 
-7) JOIN Queries
-    INNER JOIN
-    LEFT JOIN
-    RIGHT JOIN
-    FULL OUTER JOIN
-    Self Join 
-    Cross Join
+7) JOIN Queries :
+    A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+    
+    a) INNER JOIN : 
+        The INNER JOIN keyword selects records that have matching values in both tables.
+        
+    b) LEFT JOIN :
+        The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). 
+        The result is 0 records from the right side, if there is no match.
+    
+    c) RIGHT JOIN:
+        The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). 
+        The result is 0 records from the left side, if there is no match.
+
+    d) FULL OUTER JOIN :
+        The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+         FULL OUTER JOIN and FULL JOIN are the same.
+
+    e) Self Join :
+        A self join is a regular join, but the table is joined with itself.
+
+    f) Cross Join : 
+        The CROSS JOIN keyword returns all records from both tables (table1 and table2).
+        In SQL Server, the cartesian product is really a cross-join which returns all the rows in all the tables listed in a query:  
+        each row in the first table is paired with all the rows in the second table.  
+        This happens when there is no relationship defined between the two tables.
 ----------------------------------------------------------------------------------
 
-Table Replication or Duplication
+8) Table Replication or Duplication :
+    Table Replication:
+       Table replication refers to the process of copying data from one table to another, 
+       often in real-time or near-real-time.
+
+    Table Duplication:
+        Table duplication involves creating an exact copy of an existing table, 
+        including its structure and data.
 
 ----------------------------------------------------------------------------------
 
-IN & Between
+9) IN & Between :
+    The IN operator in SQL is used to specify multiple values in a WHERE clause. It is used to match one or more values specified in a list.
+    The BETWEEN operator is utilized to retrieve values within a range
 
 ----------------------------------------------------------------------------------
-Set
-    UNION
-    UNION ALL
-    INTERSECT    
+10) Set : 
+    UNION : The UNION operator is used to combine the result-set of two or more SELECT statements.
+    UNION ALL : (duplicate values also) 
+    INTERSECT : The INTERSECT operator returns the distinct (common) elements in two sets or common records from two or more tables
 ----------------------------------------------------------------------------------
 Aggregate Queries
     AVG 
