@@ -1,0 +1,137 @@
+1) What is Python? 
+ANS :- Python is a widely-used general-purpose, high-level programming language. 
+
+2) Is Python a compiled language or an interpreted language?
+ANS :- Python is an interpreted programming language, supporting object-oriented, structured, and functional programming.
+
+3) ‘#’ is used to comment
+
+4) What is the difference between a Mutable datatype and an Immutable data type?
+ANS :- 
+    Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc.
+    Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, etc.
+
+5) What is the difference between a Set and Dictionary?
+ANS :-
+    The set is an unordered collection of data types that is iterable, mutable and has no duplicate elements.
+    A dictionary in Python is an ordered collection of data values, used to store data values like a map.
+
+6) What is the differentiate between List and Tuple?
+ANS :- 
+    Lists are Mutable datatype. Lists consume more memory.
+    Tuples are Immutable datatype. Tuple consumes less memory as compared to the list.
+
+7) What is List Comprehension? Give an Example.
+ANS :- List comprehension is a syntax construction to ease the creation of a list based on existing iterable.
+    my_list = [i for i in range(1, 10)]
+
+8) What is Dictionary Comprehension? Give an Example
+ANS :- Dictionary Comprehension is a syntax construction to ease the creation of a dictionary based on the existing iterable.
+    my_dict = {i:i+7 for i in range(1, 10)}
+
+9) Is Tuple Comprehension? If yes, how, and if not why?
+ANS :- Tuple comprehension is not possible in Python because it will end up in a generator, not a tuple comprehension.
+
+10)  What is a lambda function?
+ANS :- A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement.
+    a = lambda x, y : x*y
+    print(a(7, 19))
+
+11) What is the difference between / and // in Python?
+ANS :- / represents precise division (result is a floating point number) [5//2 = 2]
+    whereas // represents floor division (result is an integer).         [5/2 = 2.5]
+
+12) How is Exceptional handling done in Python?
+ANS :- There are 3 main keywords i.e. try, except, and finally. 
+    Try is the block of a code that is monitored for errors. 
+    Except block gets executed when an error occurs.
+    The final block is to execute the code after trying for an error. This block gets executed of whether an error occurred or not.
+
+13)  What is swapcase function in Python?
+ANS :- It is a string’s function that converts all uppercase characters into lowercase and vice versa.
+    string = "GeeksforGeeks"
+    string.swapcase() ---> "gEEKSFORgEEKS"
+
+14) What are *args and *kwargs?
+ANS :- *args = Non-keyworded variable length argument
+       *kwargs = keyworded variable length argument
+
+15) What is docstring in Python?
+ANS :- Python documentation strings (or docstrings) provide a convenient way of associating documentation with Python modules, functions, classes, and methods.
+    Declaring Docstrings: 
+        The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes””” just below the class, method, or function declaration. 
+    Accessing Docstrings: 
+        The docstrings can be accessed using the __doc__ method of the object or using the help function.
+
+16) What is a break, continue, and pass in Python? 
+ANS :- 
+    The break statement is used to terminate the loop or statement in which it is present.
+    continue statement is opposite to that of the break statement, it forces to execute the next iteration of the loop.
+    Pass means performing no operation.
+
+17) What are Built-in data types in Python?
+ANS :- [Integer, Floating number, Boolean, complex number.] [String, List, Tuple, range] [Dictionary] [Set]
+
+18) What is the Difference Between a Shallow Copy and Deep Copy?
+ANS :- 
+    Deepcopy creates a different object and populates it with the child objects of the original object. 
+    Therefore, changes in the original object are not reflected in the copy.
+        copy.deepcopy() creates a Deep Copy.
+
+    Shallow copy creates a different object and populates it with the references of the child objects within the original object. 
+    Therefore, changes in the original object are reflected in the copy.
+        copy.copy creates a Shallow Copy.
+
+19) 
+ANS :- ডেকোরেটর হল এমন একটা ফাংশন যা অন্য কোন ফাংশনের কার্যপরিধি কোন প্রকার মডিফিকেশন ছাড়াই এক্সটেন্ড করে। 
+        ডেকোরেটর লেখার সিনট্যাক্স হল @decorator_name।
+
+20) What are Iterators in Python?
+ANS :-  Python iterator implements __itr__ and the next() method to iterate the stored elements. 
+        We generally use loops to iterate over the collections (list, tuple) in Python.
+
+21) What are Generators in Python?
+ANS :- The generator is a way that specifies how to implement iterators.
+        জেনারেটর একটা ফাংশন। এই ফাংশনের কাজ হল yield স্টেটমেন্ট ব্যবহার করে সিকুয়েন্স পয়দা করা। 
+        এইদিক থেকে জেনারেটরও এক ধরনের ইটারেটর।
+
+22) What is Polymorphism in Python?
+ANS :- Polymorphism means the ability to take multiple forms.
+
+23)  Define encapsulation in Python?
+ANS :- Encapsulation means binding the code and the data together.
+
+24)  How do you do data abstraction in Python?
+ANS :- Data Abstraction is providing only the required details and hides the implementation from the world.
+
+25) How is memory management done in Python?
+ANS :- Python uses its private heap space to manage the memory. 
+    Basically, all the objects and data structures are stored in the private heap space. 
+    Even the programmer can not access this private space as the interpreter takes care of this space. 
+    Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes it available to the heap space.
+
+26) What is slicing in Python?
+ANS :- Python Slicing is a string operation for extracting a part of the string, or some part of a list.
+
+27) What is a namespace in Python?
+ANS :- A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+
+28) What is PIP?
+ANS :- PIP is a Python Installer Package. pip is a package manager for python. Which is also called Preferred Installer Program.
+
+29) What are Pickling and Unpickling?
+ANS :- "Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, 
+            pickle.dump()
+     “unpickling” is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an object hierarchy. 
+        pickle.load()
+30)  What is __init__() in Python?
+ANS :- __init__ method in Python is used to initialize objects of a class. It is also called a constructor. 
+    The __init__ method is called automatically whenever a new object is initiated. This method allocates memory to the new object as soon as it is created. 
+    This method can also be used to initialize variables.
+
+31) What are unit tests in Python?
+ANS :- Unit Testing is the first level of software testing where the smallest testable parts of the software are tested. 
+    This is used to validate that each unit of the software performs as designed. 
+    The unit test framework is Python’s xUnit style framework. 
+    The White Box Testing method is used for Unit testing.
+
