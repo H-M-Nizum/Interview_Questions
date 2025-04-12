@@ -22,7 +22,8 @@ Ans: Database: System to keep data also we can
      -Retrive(fetch)
 
 Types of Databse:
-Relational Database Management System (RDBMS):
+Relational Database Management System (RDBMS): 
+A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. A relational database is a type of database that stores related data points.
 -----------------------------------------------
 Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
 Uses a tabular structure with rows and columns to store and organize data. 
@@ -161,14 +162,14 @@ A lightweight, serverless, and self-contained RDBMS that is suitable for embedde
         DBMS                                          RDBMS
     -------------------------------------------------------------
 a. stores data as file.                    | stores data in tabular form.
-b. No relationship between data.	       | Data is stored in the form of tables which are 
+b. No relationship between data.	        | Data is stored in the form of tables which are 
                                            | related to each other.
-c. Normalization is not present.	       | Normalization is present.
+c. Normalization is not present.	        | Normalization is present.
 d. Does not support distributed database.  | supports distributed database.
 e. It stores data in either a navigational | It uses a tabular structure
     or hierarchical form.
 f. It deals with small quantity of data.   | It deals with large amount of data.
-g. It supports single user.	               | It supports multiple users.
+g. It supports single user.	             | It supports multiple users.
 
 
 

@@ -15,18 +15,18 @@
 	f) Array use less memory BUT link list use more memory beacuse it sote data and address of next node.
 	g) Arry element can be access easily BUT link list element accessing require the traversel of whole link list.
 	
-								Array 		Singly 		Doubly
+					Array 		Singly 		Doubly
 	i) Insert head -     		O(N)		O(1)		O(1)
 	ii) Insert Tail -     		O(1)		O(1)		O(1)
-	iii) Insert Any-position -  O(N)		O(N)		O(N)
+	iii) Insert Any-position -  	O(N)		O(N)		O(N)
 	
 	iv) Delete head -     		O(N)		O(1)		O(1)
 	v) Delete Tail -     		O(1)		O(N)		O(1)
-	vi) Delete Any-position -   O(N)		O(N)		O(N)
+	vi) Delete Any-position -   	O(N)		O(N)		O(N)
 	
 	vii) Access head -     		O(1)		O(1)		O(1)
 	viii) Access Tail -     	O(1)		O(1)		O(1)
-	iX) Access Any-position -   O(1)		O(N)		O(N)
+	iX) Access Any-position -   	O(1)		O(N)		O(N)
 
 1.1. What is link list :
 	লিংক লিস্টের প্রতিটা এলিমেন্ট কে বলবো আমরা নোড। প্রতিটা নোডে সাধারণত দুইটা তথ্য থাকে: ১) যে তথ্যটা আমরা সংরক্ষণ করতে চাচ্ছি ২) পরবর্তি তথ্যটা কোথায় আছে তার ঠিকানা।

@@ -1,5 +1,5 @@
 1. WHAT IS ARRAY : 
-	An array is a linear data structure that collects elements of the same data type and stores them in contiguous and adjacent memory locations. 
+	An array is a linear data structure that consisting of a collection of elements. 
 
 2. Why does accessing an Array element take O(1) time?
 	As Arrays are allocated contiguously in memory, Fetching a value via an index of the array is an arithmetic operation. 
@@ -24,10 +24,10 @@
 
 5. Sorting Algorithom : 
 	Time Complexity
-						Time 		Space
-	Selection Sort		O(n^2)		O(1)
+					Time 		Space
+	Selection Sort			O(n^2)		O(1)
 	Bubble Sort			O(n^2)		O(1)
-	Insertion Sort		O(n^2)		O(1)
+	Insertion Sort			O(n^2)		O(1)
 	Quick Sort			O(n^2)		O(n)
 	Bucket Sort			O(n^2)		O(n)
 	Tree Sort			O(n^2)		O(n)

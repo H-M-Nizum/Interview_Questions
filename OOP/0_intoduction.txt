@@ -1,4 +1,6 @@
-OOP:
+What is Object Oriented Programming (OOPs)?
+Object Oriented Programming (also known as OOPs) is a programming paradigm where the complete software operates as a bunch of objects talking to each other.
+An object is a collection of data and the methods which operate on that data.
 1) Class
 2) Object
 3) Methods
@@ -7,24 +9,32 @@ OOP:
 6) Polymorphism
 7) Abstraction
 
-========================================================================================
-1-> Class : Ans: A class is a blueprint or template for creating objects. 
-========================================================================================
+=================================================================================================================================================================
+1-> Class : Ans: A class is a blueprint or template for creating objects. A class is a building block of Object Oriented Programs. 
+It is a user-defined data type that contains the data members and member functions that operate on the data members. 
+It is like a blueprint or template of objects having common properties and methods.
+=================================================================================================================================================================
 2-> Object: An object is called an instance of a class. For example, suppose Bike is a class then we can create objects like bike1 , bike2 , etc from the class. 
-========================================================================================
+=================================================================================================================================================================
 3-> Methods: Methods are functions that are associated with an object or a class.
-========================================================================================
-4-> Inheritance: Inheritance is a fundamental concept in object-oriented programming (OOP) that allows you to create new classes (subclasses or derived classes) based on existing classes (superclasses or base classes). 
+=================================================================================================================================================================4-4 -> What are the main features of OOPs?
+The main feature of the OOPs, also known as 4 pillars or basic principles of OOPs are as follows:
+    Encapsulation
+    Data Abstraction
+    Polymorphism
+    Inheritance
+=================================================================================================================================================================
+5-> Inheritance: Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class is derived from another class and uses data and implementation of that other class. The class which is derived is called child or derived or subclass and the class from which the child class is derived is called parent or base or superclass.
+The main purpose of Inheritance is to increase code reusability. It is also used to achieve Runtime Polymorphism.
 
 Type of Inheritance:
-
 I) Single Inheritance
 II) Multiple  Inheritance
 III) Multilevel Inheritance
 IV) Hierarchical Inheritance
 V) Hybrid Inheritance
 
-Single Inheritance:
+Single Inheritance: Child class derived directly from the base class
 -------------------
 class Parent:
     pass
@@ -33,7 +43,7 @@ class Child(Parent):
     pass
 
 
-Multiple Inheritance:
+Multiple Inheritance: hild class derived from multiple base classes.
 ---------------------
 class Parent1:
     pass
@@ -45,7 +55,7 @@ class Child(Parent1, Parent2):
     pass
 
 
-Multilevel Inheritance:
+Multilevel Inheritance:  Child class derived from the class which is also derived from another base class.
 ------------------------
 class Grandparent:
     pass
@@ -57,7 +67,7 @@ class Child(Parent):
     pass
 
 
-Hierarchical Inheritance:
+Hierarchical Inheritance:  Multiple child classes derived from a single base class.
 --------------------------
 class Parent:
     pass
@@ -69,7 +79,7 @@ class Child2(Parent):
     pass
 
 
-Hybrid Inheritance:
+Hybrid Inheritance: Inheritance consisting of multiple inheritance types of the above specified.
 -------------------
 class A:
     pass
@@ -82,9 +92,9 @@ class C(A):
 
 class D(B, C):
     pass
-========================================================================================
-5-> Encaptulation:
-Ans: Data and Method are binding in a single unit.
+=================================================================================================================================================================
+6-> Encaptulation: Data and Method are binding in a single unit.
+Ans: Encapsulation is the binding of data and methods that manipulate them into a single unit such that the sensitive data is hidden from the users
     Encaptulation = single unit(data + method)
 
 Two main types of encapsulation:
@@ -92,7 +102,7 @@ I) Public Access (No Encapsulation)
 II) Private Access (Encapsulation)
 
 ========================================================================================
-6-> Polymorphism
+7-> Polymorphism
 # compileTime-> static binding-> early binding->overloading
 # runtime-> dynamic binding -> late binding -> overriding
 
@@ -105,6 +115,7 @@ When combined, "polymorphism" roughly translates to "many forms" or "multiple sh
 
 I) Compile-Time Polymorphism (Static Binding):
 Compile-time polymorphism, also known as static polymorphism, occurs when the decision about which method or function to call is made at compile-time (before the program is run).
+Compile time polymorphism, also known as static polymorphism or early binding is the type of polymorphism where the binding of the call to its code is done at the compile time. Method overloading or operator overloading are examples of compile-time polymorphism.
 
 class Calculator:
     def add(self, a, b):
@@ -120,6 +131,7 @@ result2 = calc.add(1, 2, 3)       # Calls the second add method
 
 II)Run-Time Polymorphism (Dynamic Binding):
 Run-time polymorphism, also known as dynamic polymorphism, occurs when the decision about which method or function to call is made at run-time (while the program is executing).
+Also known as dynamic polymorphism or late binding, runtime polymorphism is the type of polymorphism where the actual implementation of the function is determined during the runtime or execution. Method overriding is an example of this method.
 
 class Shape:
     def area(self):
@@ -142,9 +154,9 @@ shape2 = rectangle  # A Rectangle object treated as a Shape object
 result1 = shape1.area(5)           # Calls Circle's area method
 result2 = shape2.area(4, 6)        # Calls Rectangle's area method
 
-========================================================================================
+=================================================================================================================================================================
 
-7-> Abstraction:
+8-> Abstraction:
 Abstraction is one of the fundamental principles of object-oriented programming (OOP) that involves hiding complex implementation details and showing only the necessary features of an object.
 
 Abstract Classes:
@@ -193,6 +205,7 @@ Data Abstraction:
 Abstraction can also be applied to data attributes by making them private or protected.
 This restricts direct access to the internal state of an object and encourages access through methods, providing better control over data manipulation.
 
+
 class BankAccount:
     def __init__(self, account_number, balance):
         self._account_number = account_number  # Protected attribute
@@ -210,6 +223,52 @@ class BankAccount:
         else:
             print("Insufficient balance")
 
+=================================================================================================================================================================
+9-> What are access specifiers? What is their significance in OOPs?
+Access specifiers are special types of keywords that are used to specify or control the accessibility of entities like classes, methods, and so on. Private, Public, and Protected are examples of access specifiers or access modifiers.
+The key components of OOPs, encapsulation and data hiding, are largely achieved because of these access specifiers.
 account = BankAccount("12345", 1000)
 balance = account.get_balance()  # Accessing data through a method
 
+=================================================================================================================================================================
+10-> What is the difference between Structured Programming and Object Oriented Programming?
+    A program’s logical structure is provided by structural programming, => Programming that is object-oriented is built on objects having a state and behavior.
+    It follows a Top-to-Down approach. => It follows a bottom-to-top approach
+    Code is given more importance. => Data is given more importance in OOPs.
+    Modifying the code is difficult as compared to OOPs. => Modifying and updating the code is easier
+
+=================================================================================================================================================================
+11-> What is the difference between overloading and overriding?
+A compile-time polymorphism feature called overloading allows an entity to have numerous implementations of the same name. Method overloading and operator overloading are two examples.
+
+Overriding is a form of runtime polymorphism where an entity with the same name but a different implementation is executed. It is implemented with the help of virtual functions.
+
+=================================================================================================================================================================
+12-> What is Constructor?
+A constructor is a block of code that initializes the newly created object. A constructor resembles an instance method but it’s not a method as it doesn’t have a return type. It generally is the method having the same name as the class but in some languages, it might differ. For example:
+
+In python, a constructor is named __init__. 
+```
+    class base:
+        def __init__(self):
+            print("This is a constructor")
+```
+
+=================================================================================================================================================================
+13-> What is a destructor?
+A destructor is a method that is automatically called when the object is made of scope or destroyed.
+
+In C++, the destructor name is also the same as the class name but with the (~) tilde symbol as the prefix.
+
+In Python, the destructor is named __del__.
+```
+class base:
+    def __del__(self):
+        print("This is destructor")
+```
+
+=================================================================================================================================================================
+14 -> Can we overload the constructor in a class?
+ANS - Yes
+15 -> Can we overload the destructor in a class?
+ANS - No
