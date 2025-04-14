@@ -23,7 +23,8 @@ Ans: Database: System to keep data also we can
 
 Types of Databse:
 Relational Database Management System (RDBMS): 
-A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. A relational database is a type of database that stores related data points.
+A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, 
+administer and otherwise interact with a relational database. A relational database is a type of database that stores related data points.
 -----------------------------------------------
 Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.
 Uses a tabular structure with rows and columns to store and organize data. 
@@ -192,7 +193,8 @@ Foreign Key:
 A foreign key is a field in a database table that is a primary key in another table.
 It establishes a link between the data in two tables, creating a relationship.
 The foreign key in one table refers to the primary key in another table.
-Example: If you have a "Departments" table with a primary key "DepartmentID," and an "Employees" table with a foreign key "DepartmentID," the foreign key in the "Employees" table links to the primary key in the "Departments" table.
+Example: If you have a "Departments" table with a primary key "DepartmentID," and an "Employees" table with a foreign key "DepartmentID," 
+the foreign key in the "Employees" table links to the primary key in the "Departments" table.
 
 Candidate Key:
 -----------------------------------------------
@@ -235,7 +237,8 @@ CREATE TABLE EmployeeDetails (
 );
 
 -->One-to-Many (1:N) Relationship:
-In a one-to-many relationship, each record in Table A can be associated with multiple records in Table B, but each record in Table B is associated with only one record in Table A.
+In a one-to-many relationship, each record in Table A can be associated with multiple records in Table B, but each record in Table B is 
+associated with only one record in Table A.
 This is a common relationship, and it is established using a foreign key in the "many" side table.
 Example: An order table and an order items table, where each order can have multiple items.
 

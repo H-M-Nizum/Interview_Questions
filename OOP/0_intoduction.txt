@@ -17,14 +17,17 @@ It is like a blueprint or template of objects having common properties and metho
 2-> Object: An object is called an instance of a class. For example, suppose Bike is a class then we can create objects like bike1 , bike2 , etc from the class. 
 =================================================================================================================================================================
 3-> Methods: Methods are functions that are associated with an object or a class.
-=================================================================================================================================================================4-4 -> What are the main features of OOPs?
+=================================================================================================================================================================
+4-4 -> What are the main features of OOPs?
 The main feature of the OOPs, also known as 4 pillars or basic principles of OOPs are as follows:
     Encapsulation
     Data Abstraction
     Polymorphism
     Inheritance
 =================================================================================================================================================================
-5-> Inheritance: Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class is derived from another class and uses data and implementation of that other class. The class which is derived is called child or derived or subclass and the class from which the child class is derived is called parent or base or superclass.
+5-> Inheritance: Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class is derived from another class and uses data and 
+implementation of that other class. The class which is derived is called child or derived or subclass and the class from which the child class is derived 
+is called parent or base or superclass.
 The main purpose of Inheritance is to increase code reusability. It is also used to achieve Runtime Polymorphism.
 
 Type of Inheritance:
@@ -115,7 +118,8 @@ When combined, "polymorphism" roughly translates to "many forms" or "multiple sh
 
 I) Compile-Time Polymorphism (Static Binding):
 Compile-time polymorphism, also known as static polymorphism, occurs when the decision about which method or function to call is made at compile-time (before the program is run).
-Compile time polymorphism, also known as static polymorphism or early binding is the type of polymorphism where the binding of the call to its code is done at the compile time. Method overloading or operator overloading are examples of compile-time polymorphism.
+Compile time polymorphism, also known as static polymorphism or early binding is the type of polymorphism where the binding of the call to its code is done at the compile time. 
+Method overloading or operator overloading are examples of compile-time polymorphism.
 
 class Calculator:
     def add(self, a, b):
@@ -131,7 +135,8 @@ result2 = calc.add(1, 2, 3)       # Calls the second add method
 
 II)Run-Time Polymorphism (Dynamic Binding):
 Run-time polymorphism, also known as dynamic polymorphism, occurs when the decision about which method or function to call is made at run-time (while the program is executing).
-Also known as dynamic polymorphism or late binding, runtime polymorphism is the type of polymorphism where the actual implementation of the function is determined during the runtime or execution. Method overriding is an example of this method.
+Also known as dynamic polymorphism or late binding, runtime polymorphism is the type of polymorphism where the actual implementation of the function is determined during the runtime or execution.
+Method overriding is an example of this method.
 
 class Shape:
     def area(self):
@@ -225,7 +230,8 @@ class BankAccount:
 
 =================================================================================================================================================================
 9-> What are access specifiers? What is their significance in OOPs?
-Access specifiers are special types of keywords that are used to specify or control the accessibility of entities like classes, methods, and so on. Private, Public, and Protected are examples of access specifiers or access modifiers.
+Access specifiers are special types of keywords that are used to specify or control the accessibility of entities like classes, methods, and so on. Private, Public, 
+and Protected are examples of access specifiers or access modifiers.
 The key components of OOPs, encapsulation and data hiding, are largely achieved because of these access specifiers.
 account = BankAccount("12345", 1000)
 balance = account.get_balance()  # Accessing data through a method
@@ -245,7 +251,8 @@ Overriding is a form of runtime polymorphism where an entity with the same name 
 
 =================================================================================================================================================================
 12-> What is Constructor?
-A constructor is a block of code that initializes the newly created object. A constructor resembles an instance method but it’s not a method as it doesn’t have a return type. It generally is the method having the same name as the class but in some languages, it might differ. For example:
+A constructor is a block of code that initializes the newly created object. A constructor resembles an instance method but it’s not a method as it doesn’t have a return type. 
+It generally is the method having the same name as the class but in some languages, it might differ. For example:
 
 In python, a constructor is named __init__. 
 ```
