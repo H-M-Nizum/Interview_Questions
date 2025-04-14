@@ -1,0 +1,92 @@
+✅ 1. What is a model in Odoo?
+Answer:A model in Odoo is a Python class that defines the structure of a database table. 
+    It inherits from models.Model and is used to create, read, update, and delete records. 
+    Each model corresponds to a database table.
+
+✅ 2. How do you define a new model in Odoo?
+Answer: You define a model by creating a class that inherits from models.Model and defining the _name attribute.
+        from odoo import models, fields
+        class LibraryBook(models.Model):
+            _name = 'library.book'
+            _description = 'Library Book'
+
+            name = fields.Char(string='Title')
+
+✅ 3. What are basic fields in Odoo?
+Answer: Basic fields are the building blocks of a model that define the type of data stored. 
+Examples include:
+    Char – for strings
+    Text – for longer text
+    Integer – for integers
+    Float – for decimal numbers
+    Boolean – for true/false
+    Date and Datetime – for date/time values
+
+✅ 4. What is the purpose of the _name attribute in a model?
+Answer:The _name attribute defines the technical name of the model (table name in the database), 
+    like 'res.partner' or 'library.book'.
+
+✅ 5. What is the difference between Char and Text fields?
+Answer:
+    i) Char is used for short strings (limited length, default 256 characters).
+    ii) Text is used for long-form content with no character limit.
+
+✅ 6. What is the required=True parameter in fields?
+Answer: It makes the field mandatory. If not provided, the record cannot be saved.
+        name = fields.Char(string="Book Title", required=True)
+
+✅ 7. How do you set a default value for a field in Odoo?
+Answer: Using the default parameter:
+        is_available = fields.Boolean(default=True)
+
+✅ 8. What is the difference between string and name in a field definition?
+Answer:
+        i) name is the technical name (variable name in code).
+        ii) string is the label shown in the UI.
+    
+✅ 9. How do you make a field read-only in Odoo?
+Answer: You can use readonly=True in the field definition:
+        state = fields.Selection([...], readonly=True)
+
+------------------------------------------------------------
+✅ 1. What are the different types of model relationships in Odoo?
+Answer:Odoo supports three types of relationships between models:
+    i) Many2one
+    ii) One2many
+    iii) Many2many
+
+✅ 2. What is a Many2one field in Odoo?
+Answer: A Many2one field creates a relationship where many records of the current model 
+    can be linked to one record of another model (like a foreign key in SQL).
+        author_id = fields.Many2one('library.author', string="Author")
+
+✅ 3. What is a One2many field in Odoo?
+Answer:A One2many field creates a relationship where one record of the current model 
+    can be linked to many records of another model.
+It requires:
+    the related model name
+    the inverse Many2one field name
+        fields.One2many('related_model', 'inverse_many2one_field', string='Label')
+        books_ids = fields.One2many('library.book', 'author_id', string="Books")
+
+✅ 4. What is a Many2many field in Odoo?
+Answer:A Many2many field creates a bidirectional relationship between two models, 
+    where multiple records of one model can be related to multiple records of another.
+
+        category_ids = fields.Many2many('library.category', string="Categories")
+
+✅ 5. How does Many2many work internally in Odoo?
+Answer: Odoo creates an intermediate table with two foreign keys to link records from both models.
+
+✅ 6. Can you set ondelete behavior in Many2one fields?
+Answer:Yes, you can set ondelete='cascade', 'set null', etc., to control deletion behavior.
+        author_id = fields.Many2one('library.author', ondelete='cascade')
+
+✅ 7. What is the difference between related and related_name in Odoo?
+Answer:
+related: used to show a field value from a related model.
+related_name: not used in Odoo; it’s a Django concept.
+    Example:author_name = fields.Char(related='author_id.name')
+
+✅ 8. Can a One2many field be stored in the database?
+Answer: By default, One2many is not stored directly in the database as a field, but it can be computed and stored if needed.

@@ -1,0 +1,9 @@
+1. OWL -- OWL (Odoo Web Library) refers to the UI JavaScript framework we develop 
+    to fit our products. Based on the best aspects of Vue and React, OWL is modern, 
+    simple, consistent and written with Typescript. 
+    OWL components are defined using ES6 classes and XML templates.
+2. OWL's main features:
+    i) A declarative component system;
+    ii) A finely-grained reactivity system similar to Vue;
+    iii) Hooks;
+    iv) Asynchronous rendering.
